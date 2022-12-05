@@ -25,6 +25,7 @@ public class CafeJava {
         // App interaction simulation (add your code for the challenges below)
         // Example:
         System.out.println(generalGreeting + customer1);
+        System.out.println(customer1 + readyMessage + displayTotalMessage + dripCoffeePrice);
 
         // Customer interaction print statements here
     }
