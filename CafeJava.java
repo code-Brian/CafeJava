@@ -1,5 +1,6 @@
 public class CafeJava {
     public static void main(String[] args) {
+
         String generalGreeting = "Welcome to Cafe Java, ";
         String pendingMessage = ", your order will be ready shortly.";
         String readyMessage = ", your order is ready!";
@@ -25,7 +26,7 @@ public class CafeJava {
         // App interaction simulation (add your code for the challenges below)
         // Example:
         System.out.println(generalGreeting + customer1);
-        
+
         System.out.println(customer1 + readyMessage + displayTotalMessage + dripCoffeePrice);
 
         if(isReadyOrder4){
@@ -39,6 +40,15 @@ public class CafeJava {
             System.out.println(customer2 + readyMessage + displayTotalMessage + (lattePrice*2));
         } else {
             System.out.println(customer2 + pendingMessage);
+        }
+
+        isReadyOrder3 = true;
+        // Ask about how to format doubles later
+        // double totalOrder3 = (lattePrice-dripCoffeePrice);
+        if(isReadyOrder3){
+            System.out.printf(customer3 + readyMessage + displayTotalMessage + (lattePrice-dripCoffeePrice));
+        } else {
+            System.out.println(customer3 + pendingMessage);
         }
         // Customer interaction print statements here
     }
